@@ -1,6 +1,25 @@
 * {
     margin: 0;
 }
+@font-face {
+    font-family: "Julius Sans One";
+    src: url(fonts/Julius_Sans_One/JuliusSansOne-Regular.ttf)
+}
+
+@font-face {
+    font-family: "Libre Baskerville-regular";
+    src: url(fonts/Libre_Baskerville-Reular.ttf);
+}
+
+@font-face {
+    font-family: "Libre Baskerville-Italic";
+    src: url(fonts/Libre_Baskerville/LibreBaskerville-Italic.ttf)
+}
+
+@font-face {
+    font-family: "verdemoderna";
+    src: url(fonts/verdemoderna.woff);
+}
 .container {
     display: grid;
     grid-template-rows: repeat(6);
@@ -9,6 +28,8 @@
 .container > div {
     border: solid black 1px;
 }
+
+
 
 
 .footer1, .footer2 {
