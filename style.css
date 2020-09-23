@@ -1,10 +1,9 @@
 * {
     margin: 0;
+    background-color: rgb(21, 102, 32);
+    /* #fff; */
 }
-@font-face {
-    font-family: "Julius Sans One";
-    src: url(fonts/Julius_Sans_One/JuliusSansOne-Regular.ttf)
-}
+
 
 @font-face {
     font-family: "Libre Baskerville-regular";
@@ -28,12 +27,60 @@
 .container > div {
     border: solid black 1px;
 }
+h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    font: 40px;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+}
+.header1 > img{
+    height: 80px;
+    width: 80px;
+}
+h2 {
+    font: 20px;
+    font-style: italic;
+    font-weight: lighter;
+    color: rgba(255,255,255,0.6);
+    text-align: center;
+}
+h3 {
+    font: 28px 'Julius Sans One', sans-serif;
+    color: #2e484c;
+    text-indent: 110px;
+    margin-top: 0.5em;
+}
+p {
+    line-height: 2;
+    display: inline-block; 
+    margin-left: 7em;
+    margin-right: 3em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-family: 'Libre Baskerville', sans-serif;
+}
+.by {
+    
+    font-style: italic;
+    text-transform: lowercase;
+}
+.design {
+    font-family: 'Julius Sans One', sans-serif;
+    text-decoration: none;
+    
+}
+.designer {
+    font-family: 'Julius Sans One', sans-serif;
+    text-decoration: none;
+}
 
 
 
 
 .footer1, .footer2 {
     grid-column: 1 / -1;
+    text-align: center;
 }
 @media (max-width: 900px){
     .authors {
