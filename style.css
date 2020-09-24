@@ -1,42 +1,37 @@
 * {
     margin: 0;
-    background-color: rgb(21, 102, 32);
-    /* #fff; */
+    /* background-color: #fff; */
 }
 
-
-@font-face {
-    font-family: "Libre Baskerville-regular";
-    src: url(fonts/Libre_Baskerville-Reular.ttf);
-}
-
-@font-face {
-    font-family: "Libre Baskerville-Italic";
-    src: url(fonts/Libre_Baskerville/LibreBaskerville-Italic.ttf)
-}
-
-@font-face {
-    font-family: "verdemoderna";
-    src: url(fonts/verdemoderna.woff);
-}
 .container {
     display: grid;
     grid-template-rows: repeat(6);
     grid-template-columns: 2fr 1fr;
 }
-.container > div {
-    border: solid black 1px;
-}
 h1 {
     font-family: 'Julius Sans One', sans-serif;
-    font: 40px;
+    font-size: 50px;
     font-weight: lighter;
     color: white;
     text-align: center;
+    
 }
 .header1 > img{
     height: 80px;
     width: 80px;
+    margin: auto;
+    float: left;
+    margin-left: 200px;
+}
+.header1, .header2{
+    background-image: url(http://csszengarden.com/214/contours.png), url(http://csszengarden.com/214/noise.png), 
+    url(http://csszengarden.com/214/gridlines.png),url(http://csszengarden.com/214/huntington.jpg);
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    background-size: auto, auto, auto, cover;
+    background-attachment: fixed, fixed, fixed, scroll;
+}
+.header2 {
+    background-color: rgba(255,255,255,0.25);
 }
 h2 {
     font: 20px;
@@ -60,19 +55,47 @@ p {
     margin-bottom: 0.5em;
     font-family: 'Libre Baskerville', sans-serif;
 }
+.authorsList {
+    list-style-type: none;
+}
 .by {
-    
     font-style: italic;
     text-transform: lowercase;
 }
 .design {
     font-family: 'Julius Sans One', sans-serif;
     text-decoration: none;
-    
+    font-size: 20px;
 }
 .designer {
-    font-family: 'Julius Sans One', sans-serif;
     text-decoration: none;
+}
+hr {
+    margin-right: 100;
+}
+.paragraph1 {
+    margin-top: 3em;
+}
+.paragraph2 {
+    background-image: url(http://csszengarden.com/214/contours-opaque.png), url(http://csszengarden.com/214/gridlines-opaque.png), url(http://csszengarden.com/214/bamboo.png);
+    background-repeat: repeat, repeat, no-repeat;
+    background-color: rgba(138,188,159,0.5);
+    background-size: auto, auto, cover;
+    background-attachment: scroll, scroll, fixed;
+}
+.links {
+    background-color: rgba(105, 160, 128, 0.5);
+    background-image: url(http://csszengarden.com/214/contours-opaque.png),url(http://csszengarden.com/214/gridlines-opaque.png), url(http://csszengarden.com/214/bamboo.png);
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+    background-attachment: scroll, scroll, fixed;
+}
+
+.footer1 {
+    background-image: url(http://csszengarden.com/214/contours.png),url(http://csszengarden.com/214/gridlines.png), url(http://csszengarden.com/214/noise.png), url(http://csszengarden.com/214/koi.jpg);
+    background-attachment: fixed, fixed, fixed, scroll;
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    background-size: auto, auto, auto, cover;
 }
 
 
