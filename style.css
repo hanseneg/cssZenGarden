@@ -1,12 +1,26 @@
 * {
     margin: 0;
-    /* background-color: #fff; */
 }
-
+@font-face {
+    font-family: "verdeModerna";
+    src: url(http://csszengarden.com/214/verdemoderna.woff);
+}
 .container {
     display: grid;
     grid-template-rows: repeat(6);
     grid-template-columns: 2fr 1fr;
+}
+h1::before {
+    background-image: url(http://csszengarden.com/214/enso.svg);
+    display: inline-block;
+    position: relative;
+    content: "";
+    width: 130px;
+    height: 130px;
+    background-size: 100%;
+    opacity: 1.0;
+    top: 70px;
+    margin: -20px 40px 0 0;
 }
 h1 {
     font-family: 'Julius Sans One', sans-serif;
@@ -14,49 +28,59 @@ h1 {
     font-weight: lighter;
     color: white;
     text-align: center;
-    
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
-.header1 > img{
-    height: 80px;
-    width: 80px;
-    margin: auto;
-    float: left;
-    margin-left: 200px;
-}
-.header1, .header2{
+.header1, .header2 {
     background-image: url(http://csszengarden.com/214/contours.png), url(http://csszengarden.com/214/noise.png), 
     url(http://csszengarden.com/214/gridlines.png),url(http://csszengarden.com/214/huntington.jpg);
     background-repeat: repeat, repeat, repeat, no-repeat;
     background-size: auto, auto, auto, cover;
     background-attachment: fixed, fixed, fixed, scroll;
 }
+/* transform: scale(1.2); */
 .header2 {
-    background-color: rgba(255,255,255,0.25);
+    text-align: center;
+    /* background-position: right top; */
 }
 h2 {
-    font: 20px;
+    font-size: 30px;
     font-style: italic;
     font-weight: lighter;
     color: rgba(255,255,255,0.6);
     text-align: center;
+    margin-bottom: 110px;
+    margin-left: -50px;
+    display: block;
+}
+h2::before {
+    content: " ";
+    padding: 50px;
 }
 h3 {
     font: 28px 'Julius Sans One', sans-serif;
     color: #2e484c;
-    text-indent: 110px;
+    text-indent: 125px;
     margin-top: 0.5em;
 }
 p {
     line-height: 2;
     display: inline-block; 
-    margin-left: 7em;
+    margin-left: 8em;
     margin-right: 3em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     font-family: 'Libre Baskerville', sans-serif;
+    color: #325050;
 }
-.authorsList {
+.authors {
+    background-color: #e5ede8;
+}
+.authorsList > li {
     list-style-type: none;
+    margin-top: 70px;
+    margin-left: 20px;
+    border-bottom: 2px;
 }
 .by {
     font-style: italic;
@@ -72,6 +96,9 @@ p {
 }
 hr {
     margin-right: 100;
+}
+.blank {
+    background-color: #e5ede8;
 }
 .paragraph1 {
     margin-top: 3em;
@@ -90,7 +117,11 @@ hr {
     background-size: auto, auto, cover;
     background-attachment: scroll, scroll, fixed;
 }
-
+.links > ul > li {
+    margin-top: 50px;
+    text-decoration: none;
+    list-style-type: none;
+}
 .footer1 {
     background-image: url(http://csszengarden.com/214/contours.png),url(http://csszengarden.com/214/gridlines.png), url(http://csszengarden.com/214/noise.png), url(http://csszengarden.com/214/koi.jpg);
     background-attachment: fixed, fixed, fixed, scroll;
